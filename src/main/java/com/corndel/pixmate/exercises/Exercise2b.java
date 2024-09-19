@@ -14,6 +14,18 @@ public class Exercise2b {
    */
   public static int stepDown(int[] numbers) {
     // TODO
+
+    int i = 0;
+    for (int j = 1; j < numbers.length; j++) {
+      if (numbers[i] > numbers[j]) {
+        return j;
+      } else {
+        i++;
+      }
+    }
     return -1;
+
   }
+
+
 }
